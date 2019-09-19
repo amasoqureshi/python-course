@@ -1,0 +1,91 @@
+#Radius
+r=int(input("enter area = "))
+pi=3.14
+area=pi*(r*r)
+print(area)
+
+#Data & Time
+import datetime
+datetime_object=datetime.datetime.now()
+print(datetime_object)
+
+
+#check version
+import sys
+sys.version_info
+
+
+#tabs
+string=("twinkle,winkle, little star,\n\t how i wonder what you are!\n\t\tup above the world so high,\n\t\t\tlike a diamond in the sky twinkle,\ntwinkle, little star\nhow i wonder what you are,")
+print(string)
+
+
+#list and tuple
+a=int(input("enter 1st number ="))
+b=int(input("enter 2nd number ="))
+c=int(input("enter 3rd number ="))
+q=a,b,c
+
+nlist=list(q)
+print(nlist)
+ntuple=tuple(q)
+print(ntuple)
+
+
+#IP address
+import socket    
+hostname = socket.gethostname()    
+IPAddr = socket.gethostbyname(hostname)    
+print("Your Computer Name is:" + hostname)    
+print("Your Computer IP Address is:" + IPAddr)
+
+
+#even odd
+numbers = [386,462,47,418,907,344,236,375,823,566,597,978,
+           328,615,953,345,399,162,758,219,918,237,412,566,
+           826,248,866,950,626,949,687,217,815,67,104,58,512,
+           24,892,894,767,553,81,379,843,831,445,742,717,958,743,527]
+for i in numbers:
+    if i == 237:
+        print(i)
+        break;
+    elif i % 2 == 0:
+        print("Even numbers = ",i)
+
+
+#name swap
+first_name = input("enter your first name = ")
+f_name = list()
+f_name.append(first_name)
+print(f_name)
+last_name = input("enter your last name = ")
+l_name = list()
+l_name.append(last_name)
+print(l_name)
+full_name = list(f_name + l_name)
+print("Full Name",full_name)
+full_name.reverse()
+print("Name Swap = ",full_name)
+
+
+
+#Destroy variable
+n = 20
+d = {"x":200}
+print(type(n)())
+print(type(d)())
+
+
+
+#location of directories
+import sys
+
+print("\nList of directories in sys module:")
+
+print(sys.path)
+
+print("\nList of directories in os module:")
+
+import os
+
+print(os.path)
